@@ -1,0 +1,138 @@
+documentation:
+  version: "1"
+  summary: "Rima-Challenge-Api"
+  description: A simple API
+  models:
+    - name: "CharacterRequest"
+      description: "Character model request"
+      contentType: "application/json"
+      schema:
+        $schema: "http://json-schema.org/draft-04/schema#"
+        properties:
+          character:
+            type: "object"
+            properties:
+              name:
+                type: "string"
+              description:
+                type: "string"
+    - name: "CharacterResponse"
+      description: "Character model response"
+      contentType: "application/json"
+      schema:
+        $schema: "http://json-schema.org/draft-04/schema#"
+        properties:
+          character:
+            type: "object"
+            properties:
+              name:
+                type: "string"
+              description:
+                type: "string"
+    - name: "FilmResponse"
+      description: "Film model response"
+      contentType: "application/json"
+      schema:
+        $schema: "http://json-schema.org/draft-04/schema#"
+        properties:
+          film:
+            type: "object"
+            properties:
+              titulo:
+                type: "string"
+              fecha_creacion:
+                type: "string"
+              director:
+                type: "string"
+              episodio_id:
+                type: "string"
+              apertura:
+                type: "string"
+              planetas:
+                type: "array"
+                items:
+                  type: "string"
+              productor:
+                type: "string"
+    - name: "MessageResponse"
+      description: "Message model response"
+      contentType: "application/json"
+      schema:
+        $schema: "http://json-schema.org/draft-04/schema#"
+        properties:
+          message:
+            type: "string"
+
+endpoints:
+  getCharacter:
+    summary: "Get Character"
+    description: "Get character by ID"
+    pathParams:
+      - name: "ID"
+        description: "ID of character"
+        schema:
+          type: "string"
+          pattern: "^[-a-z0-9_]+$"
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: "Get data of character successfully"
+        responseModels:
+          application/json: "CharacterResponse"
+      - statusCode: 204
+        responseBody:
+          description: "An error message when failed to get character by ID"
+        responseModels:
+          application/json: "MessageResponse"
+      - statusCode: 400
+        responseBody:
+          description: "An error message when missing the ID from the path"
+        responseModels:
+          application/json: "MessageResponse"
+  postCharacter:
+    summary: "Post Character"
+    description: "Post character by ID"
+    requestBody:
+      description: A character object
+    requestModels:
+      application/json: CharacterRequest
+    pathParams:
+      - name: "ID"
+        description: "ID of character"
+        schema:
+          type: "string"
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: "Data of character saved"
+        responseModels:
+          application/json: "CharacterResponse"
+      - statusCode: 400
+        responseBody:
+          description: "An error message when missing the ID from the path"
+        responseModels:
+          application/json: "MessageResponse"
+  getFilm:
+    summary: "Get Film"
+    description: "Get film by ID"
+    pathParams:
+      - name: "ID"
+        description: "ID of character"
+        schema:
+          type: "string"
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: "Get data of film successfully"
+        responseModels:
+          application/json: "FilmResponse"
+      - statusCode: 204
+        responseBody:
+          description: "An error message when failed to get character by ID"
+        responseModels:
+          application/json: "MessageResponse"
+      - statusCode: 400
+        responseBody:
+          description: "An error message when missing the ID from the path"
+        responseModels:
+          application/json: "MessageResponse"

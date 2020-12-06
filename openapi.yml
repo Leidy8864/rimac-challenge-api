@@ -1,0 +1,118 @@
+openapi: 3.0.0
+components:
+  schemas:
+    CharacterRequest:
+      properties:
+        character:
+          type: object
+          properties:
+            name:
+              type: string
+            description:
+              type: string
+    CharacterResponse:
+      properties:
+        character:
+          type: object
+          properties:
+            name:
+              type: string
+            description:
+              type: string
+    FilmResponse:
+      properties:
+        film:
+          type: object
+          properties:
+            titulo:
+              type: string
+            fecha_creacion:
+              type: string
+            director:
+              type: string
+            episodio_id:
+              type: string
+            apertura:
+              type: string
+            planetas:
+              type: array
+              items:
+                type: string
+            productor:
+              type: string
+    MessageResponse:
+      properties:
+        message:
+          type: string
+  securitySchemes: {}
+info:
+  title: ''
+  description: A simple API
+  version: '1'
+paths:
+  '/get-character/{ID}':
+    get:
+      operationId: getCharacter
+      summary: Get Character
+      description: Get character by ID
+      responses:
+        '200':
+          description: Get data of character successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CharacterResponse'
+        '204':
+          description: An error message when failed to get character by ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageResponse'
+        '400':
+          description: An error message when missing the ID from the path
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageResponse'
+  '/create-character/{ID}':
+    post:
+      operationId: createCharacter
+      summary: Post Character
+      description: Post character by ID
+      responses:
+        '200':
+          description: Data of character saved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CharacterResponse'
+        '400':
+          description: An error message when missing the ID from the path
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageResponse'
+  '/get-film/{ID}':
+    get:
+      operationId: getFilm
+      summary: Get Film
+      description: Get film by ID
+      responses:
+        '200':
+          description: Get data of film successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FilmResponse'
+        '204':
+          description: An error message when failed to get character by ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageResponse'
+        '400':
+          description: An error message when missing the ID from the path
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageResponse'

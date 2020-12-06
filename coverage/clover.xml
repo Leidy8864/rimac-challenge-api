@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1607263746182" clover="3.2.0">
+  <project timestamp="1607263746182" name="All files">
+    <metrics statements="90" coveredstatements="84" conditionals="61" coveredconditionals="43" methods="17" coveredmethods="16" elements="168" coveredelements="143" complexity="0" loc="90" ncloc="90" packages="4" files="8" classes="8"/>
+    <package name="lambdas.client">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="getFilmSwapi.js" path="C:\Users\lcallupe\Documents\TP\rimac-challenge-api\lambdas\client\getFilmSwapi.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lambdas.common">
+      <metrics statements="28" coveredstatements="25" conditionals="18" coveredconditionals="8" methods="7" coveredmethods="7"/>
+      <file name="API_Responses.js" path="C:\Users\lcallupe\Documents\TP\rimac-challenge-api\lambdas\common\API_Responses.js">
+        <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="14" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+      </file>
+      <file name="Dynamo.js" path="C:\Users\lcallupe\Documents\TP\rimac-challenge-api\lambdas\common\Dynamo.js">
+        <metrics statements="21" coveredstatements="18" conditionals="12" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="32" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="40" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="51" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="lambdas.endpoints">
+      <metrics statements="40" coveredstatements="37" conditionals="18" coveredconditionals="17" methods="6" coveredmethods="5"/>
+      <file name="createCharacter.js" path="C:\Users\lcallupe\Documents\TP\rimac-challenge-api\lambdas\endpoints\createCharacter.js">
+        <metrics statements="15" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+      <file name="getCharacter.js" path="C:\Users\lcallupe\Documents\TP\rimac-challenge-api\lambdas\endpoints\getCharacter.js">
+        <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+      </file>
+      <file name="getFilm.js" path="C:\Users\lcallupe\Documents\TP\rimac-challenge-api\lambdas\endpoints\getFilm.js">
+        <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="z_tests.testUtils">
+      <metrics statements="17" coveredstatements="17" conditionals="25" coveredconditionals="18" methods="3" coveredmethods="3"/>
+      <file name="eventGenerator.js" path="C:\Users\lcallupe\Documents\TP\rimac-challenge-api\z_tests\testUtils\eventGenerator.js">
+        <metrics statements="4" coveredstatements="4" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="49" count="10" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+      </file>
+      <file name="validators.js" path="C:\Users\lcallupe\Documents\TP\rimac-challenge-api\z_tests\testUtils\validators.js">
+        <metrics statements="13" coveredstatements="13" conditionals="17" coveredconditionals="10" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="4" count="3" type="cond" truecount="4" falsecount="1"/>
+        <line num="5" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="7" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
